@@ -1,0 +1,9 @@
+Fonts not inluded here because I need to go through all of their licences first.
+
+1900805.ttf
+Abduction.ttf
+ALPNSCND.TTF
+ARCADE.TTF
+Blox2.ttf
+DIGITAL.TTF
+dungeon.TTF

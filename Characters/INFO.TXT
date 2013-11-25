@@ -1,0 +1,34 @@
+Animation Definition File Format
+
+(anchor constants)
+ANCHOR_CENTER  	0
+ANCHOR_LD	1
+ANCHOR_LT 	2
+ANCHOR_LU 	3
+ANCHOR_RD 	4
+ANCHOR_RT 	5
+ANCHOR_RU	6
+ANCHOR_UP 	7
+ANCHOR_DN	8
+
+The anim frame sequence is constructed from images already loaded in memory
+(in an array of surfaces).
+So the loader function must be passed that array as a parameter whose sprites
+are accessed as array[spriteno], which is given in the adf file.
+This way the same images can be used for multiple animations or the same image
+more than once in the same animation;
+
+The files in a single folder named as ordered numbers are fed in to the sprite array
+
+BOF--------------------------------
+
+<numframes>
+<anchor>
+<spriteno> <x> <y> <dx> <dy> <wait> <soundno>
+etc...
+
+EOF--------------------------------
+
+
+notes on wait:
+100 = 1 sec
